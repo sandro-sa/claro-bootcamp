@@ -103,10 +103,10 @@ classDiagram
         +String description
     }
 
-    User --> Account
-    User --> Feature
-    User --> Card
-    User --> News
+    User "1" *--> "1" Account
+    User "1" *--> "N" Feature
+    User "1" *--> "1" Card
+    User "1" *--> "N" News
 ````
 
 Esse diagrama representa a estrutura do usuário, suas contas, características, cartão e notícias, de maneira clara e organizada.
