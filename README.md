@@ -110,3 +110,7 @@ classDiagram
 ````
 
 Esse diagrama representa a estrutura do usuário, suas contas, características, cartão e notícias, de maneira clara e organizada.
+
+- Para ler o arquivo `resouces/application-dev.yml` criar a variavel
+
+![alt text](image-1.png)
