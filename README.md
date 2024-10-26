@@ -124,6 +124,7 @@ Esse diagrama representa a estrutura do usuário, suas contas, características,
 
 ![img_2.png](img_2.png)
 
+- `Arquivo application-prd.yml`
 ````yml
     spring:
     datasource:
