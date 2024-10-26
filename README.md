@@ -111,6 +111,28 @@ classDiagram
 
 Esse diagrama representa a estrutura do usuário, suas contas, características, cartão e notícias, de maneira clara e organizada.
 
-- Para ler o arquivo `resouces/application-dev.yml` criar a variavel
+- Para ler o arquivo `resouces/application-dev.yml` criar a variavel de ambiente na IDE
 
-![alt text](image-1.png)
+![img_3.png](img_3.png)
+
+- Para ler o arquivo `resouces/application-prd.yml` duplique aplication altere de `dev` para `prd`
+- Crie uma conta no [Railway](https://railway.app/)
+- Em seguida crie um no projeto escolhendo ``Deploy PostegresSQL``
+- OBS: para acessar o banco de dados localmente acesse Settings para copiar a url publica
+![img_1.png](img_1.png)
+- As demais variaveis estão em variables copie e crie as variaveis de produção na IDE
+
+![img_2.png](img_2.png)
+
+````yml
+    spring:
+    datasource:
+    url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
+    username: ${PGUSER}
+    password: ${PGPASSWORD}
+    jpa:
+    open-in-view: false
+    hibernate:
+    ddl-auto: create
+````
+
